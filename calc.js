@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 
 
 
-var recursiveAsyncReadLine = function () {
+let recursiveAsyncReadLine = function () {
     rl.question('Sair? (Y/N) ', function (answer) {
       if (answer == 'Y' || answer == 'y') 
         return rl.close(); 
